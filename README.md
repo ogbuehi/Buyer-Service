@@ -2,7 +2,7 @@ To run this application :
 
 . First of all , change the database(MYSQL) configuration in the application.properties file to your own database table name, username and password;
 
-. Navigate to the main spring boot application class annotated with'@SpringBootApplication', right click and run the applicatioin.
+. Navigate to the main spring boot application class annotated with'@SpringBootApplication', right click and run the application.
 
 . Using your web browser, postman or any other rest client:
 
