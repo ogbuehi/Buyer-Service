@@ -13,9 +13,10 @@ import java.util.Optional;
 
 @Repository
 public interface SupplierDao extends JpaRepository<Supplier, Integer> {
-    @Query("SELECT * FROM supplier WHERE location=" +
-            "location, nature_of_business= natureOfBusiness, manufacturing_process= manufacturingProcess")
-    Page<Supplier> getSuppliers(@RequestParam String location, @RequestParam String natureOfBusiness, @RequestParam String manufacturingProcess, Pageable pageable);
+    @Query(value = "SELECT * FROM supplier WHERE location=" +
+            ":location, nature_of_business= :natureOfBusiness AND manufacturing_process= :manufacturingProcess")
+    Page<Supplier> getSuppliers(@Param("location") String location, @Param("natureOfbusiness") String natureOfBusiness,
+                                @Param("manufacturingProcess") String manufacturingProcess, Pageable pageable);
 
     Optional<Supplier> findByUserName(String username);
 }
