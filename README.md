@@ -1,6 +1,7 @@
 To run this application :
 
 . First of all , change the database(MYSQL) configuration in the application.properties file to your own database table name, username and password;
+   {https://github.com/ogbuehi/Supplier-Service/blob/master/src/main/resources/application.properties}
 
 . Navigate to the main spring boot application class annotated with'@SpringBootApplication', right click and run the application.
 
