@@ -23,7 +23,7 @@ public class SupplierController {
     @GetMapping("/get")
     public ResponseEntity<SupplierResponse> getSpecificSuppliers
             (@RequestParam(value = "pageNum", defaultValue="0") int pageNum,
-             @RequestParam(value = "pageSize", defaultValue="10") int pageSize,
+             @RequestParam(value = "pageSize", defaultValue="5") int pageSize,
              @RequestBody @Valid QueryDto queryDto){
         return supplierService.getSpecificSuppliers(pageNum, pageSize, queryDto);
     }
