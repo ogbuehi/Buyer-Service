@@ -4,6 +4,7 @@ To run this application :
    {https://github.com/ogbuehi/Supplier-Service/blob/master/src/main/resources/application.properties}
 
 . Navigate to the main spring boot application class annotated with'@SpringBootApplication', right click and run the application.
+   {https://github.com/ogbuehi/Supplier-Service/blob/master/src/main/java/com/javatask/SupplierService/SupplierServiceApplication.java}
 
 . Using your web browser, postman or any other rest client:
 
