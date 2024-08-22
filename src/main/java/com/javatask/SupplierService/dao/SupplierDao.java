@@ -14,7 +14,7 @@ import java.util.Optional;
 @Repository
 public interface SupplierDao extends JpaRepository<Supplier, Integer> {
     @Query(value = "SELECT * FROM supplier WHERE location=" +
-            ":location, nature_of_business= :natureOfBusiness AND manufacturing_process= :manufacturingProcess")
+            ":location, nature_of_business= :natureOfBusiness AND manufacturing_process= :manufacturingProcess", nativeQuery = true)
     Page<Supplier> getSuppliers(@Param("location") String location, @Param("natureOfbusiness") String natureOfBusiness,
                                 @Param("manufacturingProcess") String manufacturingProcess, Pageable pageable);
 
