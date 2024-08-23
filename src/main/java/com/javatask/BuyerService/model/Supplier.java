@@ -32,4 +32,8 @@ public class Supplier {
     @NotNull
     @Column(name = "manufacturing_process")
     private String manufacturingProcess;
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinTable(name = "SUPPLIER MAPPING", joinColumns = @JoinColumn(name = "supplier_id"), 
+        inverseJoinColumns = @JoinColumn(name = "buyer_id"))
+    private Set<Buyer> buyers;
 }
