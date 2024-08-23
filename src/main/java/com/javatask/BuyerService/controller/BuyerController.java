@@ -27,7 +27,7 @@ public class BuyerController {
     // To get the buyer's own criteria of manufacturers from the database
     // localhost:8080/api/buyer/get_suppliers?pageNum=1&pageSize=5
     // then add a body in the request containing the location, nature of business and manufacturing process to get result.
-    @GetMapping("/get_suppliers")
+    @GetMapping("/find_suppliers")
     public ResponseEntity<SupplierResponse> getSpecificSuppliers
     (@RequestParam(value = "pageNum", defaultValue="0") int pageNum,
      @RequestParam(value = "pageSize", defaultValue="10") int pageSize,
