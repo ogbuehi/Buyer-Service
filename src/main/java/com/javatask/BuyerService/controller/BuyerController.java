@@ -23,7 +23,7 @@ public class BuyerController {
         return buyerService.addBuyer(buyerSignUpDto);
     }
     // To get the buyer's own criteria of manufacturers from the database
-    @GetMapping("/get_supplier")
+    @GetMapping("/get_suppliers")
     public ResponseEntity<SupplierResponse> getSpecificSuppliers
     (@RequestParam(value = "pageNum", defaultValue="0") int pageNum,
      @RequestParam(value = "pageSize", defaultValue="10") int pageSize,
