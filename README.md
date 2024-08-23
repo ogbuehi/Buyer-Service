@@ -36,4 +36,4 @@ This is a customer or buyer service application where the buyer(user) has to:
 
    To search for suppliers:
 
-   - localhost:8080/api/buyer/find_suppliers
+   - localhost:8080/api/buyer/find_suppliers?pageNum=1&pageSize=5
