@@ -16,6 +16,8 @@ public class SupplierController {
     private final SupplierService supplierService;
 
     // To add a supplier to the database
+    // localhost:8080/api/supplier/add_supplier
+    // then add to method body all the fields required, to add supplier.
     @PostMapping("/add_supplier")
     public ResponseEntity<String> addSupplier(@RequestBody @Valid SupplierSignUpDto signUpDto){
         return supplierService.saveSupplier(signUpDto);
