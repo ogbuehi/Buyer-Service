@@ -24,7 +24,7 @@ This is a customer or buyer service application where the buyer(user) has to:
    
    ./mvnw spring-boot:run
 
-   TEST API :
+   RUN API SERVICE:
 
    To add a supplier:
 
