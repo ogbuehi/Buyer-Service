@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/add_buyer","add_supplier")
                         .permitAll()
-                        .requestMatchers("/get_suppliers").hasRole("USER")
+                        .requestMatchers("/find_suppliers").hasRole("USER")
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
