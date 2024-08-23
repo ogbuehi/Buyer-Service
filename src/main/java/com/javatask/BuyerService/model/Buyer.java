@@ -17,5 +17,5 @@ public class Buyer {
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
     @JoinTable(name = "SUPPLIER MAPPING", joinColumns = @JoinColumn(name = "buyer_id"), 
         inverseJoinColumns = @JoinColumn(name = "supplier_id"))
-    private List<Supplier> supplier;
+    private Set<Supplier> suppliers;
 }
