@@ -6,6 +6,8 @@ This is a customer or buyer service application where the buyer(user) has to:
   
 - then the buyer can be logged in after providing credentials to access the available suppliers.
 
+- It could have been divided into microoservices(buyer service and supplier service), but let's keep it simple. 
+
  TO GET THIS APPLICATION UP AND RUNNING IN YOUR SYSTEM:
   
   MAKE CHANGES:
