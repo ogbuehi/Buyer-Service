@@ -5,7 +5,10 @@ import lombok.Getter;
 
 @Getter
 public class QueryDto {
+    @NotNull
     private String location;
+    @NotNull
     private String natureOfBusiness;
+    @NotNull
     private String manufacturingProcess;
 }
