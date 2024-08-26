@@ -20,7 +20,7 @@ public class BuyerController {
     // localhost:8080/api/buyer/add_buyer
     // then add body in the request containing username, password and email to add buyer.
     @Secured("ROLE_USER")
-    @PostMapping("/add_buyer")
+    @PostMapping("/add")
     public ResponseEntity<String> addBuyer(@RequestBody BuyerSignUpDto buyerSignUpDto){
         return buyerService.addBuyer(buyerSignUpDto);
     }
