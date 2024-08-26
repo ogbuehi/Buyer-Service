@@ -23,7 +23,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests((authorize) -> authorize
-                        .requestMatchers("/add_buyer","add_supplier")
+                        .requestMatchers("/add")
                         .permitAll()
                         .requestMatchers("/find_suppliers").hasRole("USER")
                         .anyRequest().authenticated())
